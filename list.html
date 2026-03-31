@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-cream:     #faf6f0;
+            --color-parchment: #f0e6d3;
+            --color-linen:     #ddc9ae;
+            --color-caramel:   #b8895a;
+            --color-walnut:    #7a4f2e;
+            --color-espresso:  #3b1f0f;
+            --font-display:    'Playfair Display', Georgia, serif;
+            --font-body:       'Lato', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-cream);
+            color: var(--color-espresso);
+        }
+
+        h2 {
+            font-family: var(--font-display);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-cream flex items-center justify-center px-6 py-16">
+
+    <div class="w-full max-w-xl space-y-10">
+
+        <!-- Page title -->
+        <div class="text-center">
+            <div class="flex items-center justify-center gap-3 mb-1">
+                <div class="h-px w-16 bg-linen"></div>
+                <span class="text-caramel text-xs tracking-[0.4em] uppercase" style="font-family: var(--font-body); font-weight: 300;">Lists</span>
+                <div class="h-px w-16 bg-linen"></div>
+            </div>
+        </div>
+
+        <!-- Unordered List card -->
+        <div class="bg-parchment border border-linen shadow-md shadow-walnut/10 rounded-sm overflow-hidden">
+            <div class="border-b border-linen px-8 py-5 bg-walnut">
+                <h2 class="text-cream text-2xl font-normal italic">Undordered List (ul) <br/> Banana Lovers Includes:</h2>
+            </div>
+            <div class="px-8 py-7">
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-3 group">
+                        <span class="w-1.5 h-1.5 rounded-full bg-caramel flex-shrink-0"></span>
+                        <span class="text-espresso text-lg" style="font-family: var(--font-display); font-weight: 400;">Monkeys</span>
+                    </li>
+                    <li class="flex items-center gap-3 group">
+                        <span class="w-1.5 h-1.5 rounded-full bg-caramel flex-shrink-0"></span>
+                        <span class="text-espresso text-lg" style="font-family: var(--font-display); font-weight: 400;">Hippos</span>
+                    </li>
+                    <li class="flex items-center gap-3 group">
+                        <span class="w-2 h-0.5 bg-caramel flex-shrink-0"></span>
+                        <span class="text-espresso text-lg" style="font-family: var(--font-display); font-weight: 400;">Humans</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Ordered List card -->
+        <div class="bg-parchment border border-linen shadow-md shadow-walnut/10 rounded-sm overflow-hidden">
+            <div class="border-b border-linen px-8 py-5 bg-espresso">
+                <h2 class="text-cream text-2xl font-normal italic">Ordered List (ol) <br/> Banana eating tutorial </h2>
+            </div>
+            <div class="px-8 py-7">
+                <ol class="space-y-4">
+                    <li class="flex items-start gap-4 border-b border-linen pb-4">
+                        <span class="text-caramel text-xs tracking-widest pt-1 w-5 flex-shrink-0" style="font-family: var(--font-body); font-weight: 300;">01</span>
+                        <span class="text-espresso text-base leading-relaxed" style="font-family: var(--font-display);">Tear away the top of the banana skin</span>
+                    </li>
+                    <li class="flex items-start gap-4 border-b border-linen pb-4">
+                        <span class="text-caramel text-xs tracking-widest pt-1 w-5 flex-shrink-0" style="font-family: var(--font-body); font-weight: 300;">02</span>
+                        <div class="flex-1">
+                            <span class="text-espresso text-base leading-relaxed" style="font-family: var(--font-display);">Pull down one side of the skin</span>
+                            <ol type="a" class="mt-3 ml-6 space-y-2">
+                                <li class="flex items-start gap-3">
+                                    <span class="text-caramel text-xs tracking-widest pt-1 w-4 flex-shrink-0 italic" style="font-family: var(--font-body); font-weight: 300;">a.</span>
+                                    <span class="text-espresso text-sm leading-relaxed italic" style="font-family: var(--font-display);">usually there are four sides</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-caramel text-xs tracking-widest pt-1 w-4 flex-shrink-0 italic" style="font-family: var(--font-body); font-weight: 300;">a.</span>
+                                    <span class="text-espresso text-sm leading-relaxed italic" style="font-family: var(--font-display);">peel off the left side</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-caramel text-xs tracking-widest pt-1 w-4 flex-shrink-0 italic" style="font-family: var(--font-body); font-weight: 300;">a.</span>
+                                    <span class="text-espresso text-sm leading-relaxed italic" style="font-family: var(--font-display);">now peel off the back part</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-caramel text-xs tracking-widest pt-1 w-4 flex-shrink-0 italic" style="font-family: var(--font-body); font-weight: 300;">a.</span>
+                                    <span class="text-espresso text-sm leading-relaxed italic" style="font-family: var(--font-display);">peel off the right side</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-caramel text-xs tracking-widest pt-1 w-4 flex-shrink-0 italic" style="font-family: var(--font-body); font-weight: 300;">a.</span>
+                                    <span class="text-espresso text-sm leading-relaxed italic" style="font-family: var(--font-display);">finally peel off the front part</span>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    
+                    <li class="flex items-start gap-4 border-b border-linen pb-4">
+                        <span class="text-caramel text-xs tracking-widest pt-1 w-5 flex-shrink-0" style="font-family: var(--font-body); font-weight: 300;">03</span>
+                        <span class="text-espresso text-base leading-relaxed" style="font-family: var(--font-display);">bite the top part of the banana</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="text-caramel text-xs tracking-widest pt-1 w-5 flex-shrink-0" style="font-family: var(--font-body); font-weight: 300;">04</span>
+                        <span class="text-espresso text-base leading-relaxed" style="font-family: var(--font-display);">dont forget to throw the skin away</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Footer rule -->
+        <div class="flex items-center justify-center gap-3">
+            <div class="h-px w-16 bg-linen"></div>
+            <span class="text-linen text-sm">◆</span>
+            <div class="h-px w-16 bg-linen"></div>
+        </div>
+
+    </div>
+</body>
+</html>
